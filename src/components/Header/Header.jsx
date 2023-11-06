@@ -148,36 +148,35 @@ export const Header = () => {
 								>
 									Product
 								</a>
-								<a
-									href="#"
+								<Link
+									to="/dashboard"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-black"
 									style={{
 										color:
 											theme == 'light' ? '#A6ADBA' : '',
 									}}
 								>
-									Features
-								</a>
-								<a
-									href="#"
+									Dashboard
+								</Link>
+								<Link
+									to="/admin"
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-black"
 									style={{
 										color:
 											theme == 'light' ? '#A6ADBA' : '',
 									}}
 								>
-									Marketplace
-								</a>
-								<a
-									href="#"
+									Admin
+								</Link>
+								<button
 									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-black"
 									style={{
 										color:
 											theme == 'light' ? '#A6ADBA' : '',
 									}}
 								>
-									Company
-								</a>
+									Log Out
+								</button>
 							</div>
 							<div className="py-6">
 								<Link
