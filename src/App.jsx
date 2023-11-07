@@ -7,10 +7,13 @@ import React, { useEffect, useState } from 'react';
 import { Admin } from './pages/Admin/Admin';
 import { Home } from './pages/Home/Home';
 import { Dashboard } from './pages/Dashboard/Dashboard';
+import { initFlowbite } from 'flowbite';
 
 export const Context = React.createContext();
 
 export const App = () => {
+	initFlowbite();
+
 	const [theme, setTheme] = useState(
 		localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light',
 	);
